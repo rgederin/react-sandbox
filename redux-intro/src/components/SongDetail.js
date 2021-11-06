@@ -1,11 +1,13 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-
-const SongDetail = ({ song }) => {
+const SongDetail = () => {
+    const song = useSelector(state => state.selectedSong);
+    
     if (!song) {
         return <div>Select a song</div>
     }
+    
     return (
         <div>
             <h3>Details for: </h3>
@@ -18,8 +20,4 @@ const SongDetail = ({ song }) => {
     );
 };
 
-const mapStateToProps = (state) => {
-    return { song: state.selectedSong };
-};
-
-export default connect(mapStateToProps)(SongDetail);
+export default SongDetail;
