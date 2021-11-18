@@ -1,9 +1,13 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { createStream } from "../../actions/index"
 import { Field, formValues, reduxForm } from "redux-form";
+import { createStore } from "redux";
 
 
 const StreamCreate = props => {
+    const dispatch = useDispatch();
+
 
     // const renderInput = (formProps) => {
     //     console.log(formProps);
@@ -35,6 +39,7 @@ const StreamCreate = props => {
     };
     const onSubmit = formValues => {
         console.log(formValues);
+        dispatch(createStream(formValues))
     };
 
     return (
