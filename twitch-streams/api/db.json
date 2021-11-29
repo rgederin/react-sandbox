@@ -1,9 +1,28 @@
 {
   "streams": [
     {
-      "title": "r",
-      "description": "c",
-      "id": 1
+      "title": "Stream with id!",
+      "description": "Example of a stream with id",
+      "userId": "118184583473988292108",
+      "id": 2
+    },
+    {
+      "title": "Programmatic nav",
+      "description": "Will redirect after creation",
+      "userId": "118184583473988292108",
+      "id": 3
+    },
+    {
+      "title": "Stream with OUT id",
+      "description": "No ID at all!!!!!",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "title": "test new on submit",
+      "description": "test test tes ",
+      "userId": "118184583473988292108",
+      "id": 5
     }
   ]
 }
